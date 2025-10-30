@@ -1,0 +1,53 @@
+.card {
+  width: 260px;               /* fixed width for consistency */
+  height: 340px;              /* make all cards same height */
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hwb(0 0% 100% / 0.1);
+  text-align: center;
+
+  box-sizing: border-box;     /* ← keeps height the same even if border differs */
+  display: flex;              /* not inline-block */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards-container {
+  display: flex;              /* ← missing */
+  justify-content: center;
+  align-items: stretch;       /* equal heights */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card .card-image{
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 10px;
+  
+}
+
+.card .card-title{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: hwb(0 0% 20px);
+
+}
+
+.card .card-text{
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(0, 0%,30%)
+}
+.debby-card{
+  background-color: pink;
+  border: 2px solid white;
+ 
+}
+.cards-container {
+  
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch; /* ✅ makes all cards equal height */
+}
